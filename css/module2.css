@@ -1,0 +1,94 @@
+/* To reset the  css browser's default */
+html{
+    box-sizing:border-box;
+}
+*,*:before,*:after{
+    box-sizing:inherit;
+}
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family:Helvetica, sans-serif;
+    background-color:#fff;
+}
+
+/* base styling */
+
+h1{
+    text-align:center;
+    font-size:1.2rem;
+    margin-top:20px;
+}
+section > p{
+    border:1px solid #000;
+    padding:2rem 1rem 1rem 1rem;
+    position:relative;
+    font:bold 0.8rem arial;
+    background-color:#777;
+    margin:20px auto;
+    width:90%;
+    color:#000;
+}
+section p span{
+    background-color:#777;
+    border:1px solid #000;
+    padding:0.2rem;
+    width:7rem;
+    display:block;
+    font:bold 1.2rem;
+    position:absolute;
+    top:0;
+    right:0;
+    text-align:center;
+}
+.chicken{
+    background-color:darkred;
+    color:white;
+}
+.beef{
+    background-color:yellow; 
+    color:darkred;
+}
+.sushi{
+    background-color:darkgreen;
+    color:yellow;
+}
+
+/* larger screen size */
+@media(min-width:992px){
+.col-lg{
+    float:left;
+    width:30.33%;
+    margin:1.5%;
+}
+}
+/* Tablet screen size */
+@media(min-width:768px) and (max-width:991px){
+.col-md{
+    float:left;
+    width:50%;
+    margin:0;
+}
+.col-md-twice{
+    clear:left;
+    width:100%;
+}
+.col-md-twice p{
+    width:95%;
+    margin:0 auto;
+}
+}
+/*Mobile screen size */
+@media(max-width:767px){
+ .row{
+        width:100%;
+}
+.col-lg{
+    width:85%;
+    margin:0 auto;
+}
+}
+
+
